@@ -1,0 +1,54 @@
+import java.util.Scanner;
+
+public class Jarvis_1_0 {
+
+	public Jarvis_1_0() {
+
+	public static void main(String[] args) {
+
+		Scanner in= new Scanner(System.in);
+
+//总是忘记Scanner唉哈哈哈，这次不会了
+		
+    System.out.println("Welcome, shall we check your identity?\n 你好，是否查验您的身份？");
+
+//		int a= in.nextInt();
+//		if(a==1) {
+//		上面是不会验证字符串的初始版本，现在已经升级了，谁会用"=="验证字符串啊，好蠢，equals!!!
+		
+    String s= in.next();
+		if (s.equals("Yes") ||s.equals("是")){
+			System.out.println("Please input your password.\n 请输入您的密码。");
+			long p= in.nextLong();
+			if(p==20010702) {
+				System.out.println("Hello, LeipengWang, the king of the world! \n 你好，LeipengWang, 世界的绝对主宰者！");
+			}
+			else {
+				if(p==20090208) {
+					System.out.println("Hello, Wendy, the most beautiful girl in the world!\n 你好，Wendy，世界上最漂亮的女孩！");
+				}
+				else {
+					if(p==19780224) {
+						System.out.println("Hello, Ms.Liu, the best mom in the world!\n 你好，Ms.Liu，世界上最好的妈妈！");
+					}
+					else {
+						if(p==19750708) {
+							System.out.println("Hello, Mr.Wang, the best dad in the world!\n 你好，Mr.Wang，世界上最好的爸爸！");
+						}
+						else {
+							System.out.println("Can not recognize your identity, please try again.\n 无法识别你的身份，请重试。");
+						}
+					}
+				}
+			}
+		}
+    
+//		循环套循环，太麻烦了，后面肯定要改简单点，起码逻辑简洁点，用个switch试试，不过现在先保留吧，毕竟这样的逻辑感对刚开始很重要
+		
+    in.close();
+
+//		结束了，先这样吧~
+	
+  }
+
+}
